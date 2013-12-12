@@ -1,0 +1,59 @@
+body
+  padding: 0px
+  margin: 0px
+
+.board
+  position: absolute
+  height: 100%
+  width: 100%
+  z-index: 10
+
+.panel
+  position: relative
+  float: left
+  height: 50%
+  width: 50%
+
+.inactive
+  opacity: 0.4
+
+#redPanel
+  background-color: red
+
+#bluePanel
+  background-color: blue
+
+#greenPanel
+  background-color: green
+
+#yellowPanel
+  background-color: yellow
+
+.status
+  position: absolute
+  background-color: white
+  top: 33%
+  left: 33%
+  height: 33%
+  width: 33%
+  z-index: 20
+  border: 2px solid black
+
+  #startButton,
+  #turnIndicator,
+  #level
+    height: 33%
+    width: 100%
+
+  #level,
+  #turnIndicator
+    padding: 0.5em
+
+  #startButton
+    background-color: purple
+
+  #turnIndicator.learningTurn
+    background-color: orange
+
+  #turnIndicator.playbackTurn
+    background-color: magenta

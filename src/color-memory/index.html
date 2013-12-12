@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="colorMemoryApp">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color memory</title>
+    <link rel="stylesheet" href="./assets/stylesheets/color-memory.css" media="screen"/>
+  </head>
+  <body ng-controller="ColorMemoryController">
+    <div class="board">
+      <div ng-repeat="panel in panels" id="{{panel.id}}" ng-click="onPanelClick(panel.id);" class="panel {{panel.active}}"></div>
+    </div>
+    <div class="status">
+      <div id="startButton" ng-click="startGame()"></div>
+      <div id="turnIndicator" class="{{turn.class}}">{{turn.message}}</div>
+      <div id="level">level {{sequence.length}}</div>
+    </div>
+    <script src="./assets/javascripts/lib/angular.min.js"></script>
+    <script src="./assets/javascripts/color-memory.js"></script>
+  </body>
+</html>

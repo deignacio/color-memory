@@ -1,0 +1,11 @@
+Color Memory web app
+David Ignacio <deignacio@gmail.com>
+
+four colors (red, blue, green, yellow)
+they will flash, you have to remember the sequence
+
+it gets harder and faster as you get better
+four colored panels, fifth center/center with status/metadata
+
+multi-touch
+coffeescript
